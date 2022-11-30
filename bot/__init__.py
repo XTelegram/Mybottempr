@@ -105,21 +105,18 @@ else:
 OWNER_ID = environ.get('OWNER_ID', '')
 if len(OWNER_ID) == 0:
     log_error("OWNER_ID variable is missing! Exiting now")
-    exit(1)
 else:
     OWNER_ID = int(OWNER_ID)
 
 TELEGRAM_API = environ.get('TELEGRAM_API', '')
 if len(TELEGRAM_API) == 0:
     log_error("TELEGRAM_API variable is missing! Exiting now")
-    exit(1)
 else:
     TELEGRAM_API = int(TELEGRAM_API)
 
 TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '')
 if len(TELEGRAM_HASH) == 0:
     log_error("TELEGRAM_HASH variable is missing! Exiting now")
-    exit(1)
 
 GDRIVE_ID = environ.get('GDRIVE_ID', '')
 if len(GDRIVE_ID) == 0:
